@@ -1,23 +1,23 @@
 import requests
-from requests.models import Response
+from requests import Response
+
 URL: str = 'https://api.chucknorris.io/jokes/random'
 
-palabras_min = []
-joke_chuck = []
-def funcion_chuck(veces, url):
-    f = open("results.txt", "w")
+def guardar_palabras(texto, archivo):
+    palabras = texto.split()
+    palabras = set(map(str.lower, palabras))
+    with open(archivo, 'w') as archivo_salida:  
+        for palabra in palabras:
+            archivo_salida.write(palabra + '\n')  
+
+def funcion_chuck(veces, url, archivo):
     for bromas in range(veces):
         answer: Response = requests.get(url=URL) 
         data_json = answer.json()
         broma = data_json['value']
-        joke_chuck.append(broma)
-        for words in joke_chuck:
-            minusculas = words.lower()
-            palabras_min.append(minusculas)
-        f.write(f"{palabras_min}\n")
+        guardar_palabras(broma, archivo)
 
-funcion_chuck(10, URL)
-print(palabras_min)
+funcion_chuck(2, URL, "results.txt")
 
 
 
