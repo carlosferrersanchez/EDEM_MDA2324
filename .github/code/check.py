@@ -2,7 +2,7 @@ import os
 
 
 
-deliverables=["DOCKER","PYTHON","LINUX","NOTEBOOKS","AHORCADO"]
+deliverables=["DOCKER","PYTHON","LINUX","NOTEBOOKS","AHORCADO","SQL"]
 
 
 
@@ -22,21 +22,22 @@ def check_class(folder_path):
     return alumnos
 
 
-def generate_table(alumnos):
+def generate_table(clase,alumnos):
+    
     try:
-        table="<table><tr><th>Alumno</th>"
+        table="<table>\n<tr><th>Alumno</th>"
         for element in deliverables:
-            table+="<th>"+element+"</th>"
-        table+="</tr>"  
-        for alumno in alumnos:
-            table+="<tr><td>"+str.capitalize(alumno)+"</td>"
+            table+="\n<th>"+element+"</th>"
+        table+="\n</tr>\n"  
+        for alumno in sorted(alumnos):
+            table+="<tr>\n<td><a href='https://github.com/a10pepo/EDEM_MDA2324/tree/main/Alumnos/"+clase+"/"+alumno+"'>"+str.capitalize(alumno)+"</a></td>"
             for element in deliverables:
                 if alumnos[alumno][element]:
-                    table+="<td>✅</td>"
+                    table+="\n<td>✅</td>"
                 else:
-                    table+="<td>❌</td>"
-            table+="</tr>"
-        table+="</table>"
+                    table+="\n<td>❌</td>"
+            table+="\n</tr>\n"
+        table+="</table>\n"
     except:
         print("error")
     return table
@@ -51,11 +52,11 @@ def modify_readme():
             file.write(parts[0])
             file.write('### Estado de las entregas\n')
             file.write('Entregas Fin de Semana\n')
-            file.write(generate_table(check_class('Alumnos/FS')))
+            file.write(generate_table("FS",check_class('Alumnos/FS')))
             file.write('\n')
             file.write('\n')
             file.write('Entregas Entre Semana\n')
-            file.write(generate_table(check_class('Alumnos/ES')))
+            file.write(generate_table("ES",check_class('Alumnos/ES')))
             file.write('\n')
         except:
             file.close()
@@ -65,8 +66,7 @@ def modify_readme():
 
 
 
-if __name__ == '__main__':
-    
-    #check_class('Alumnos/FS')
+if __name__ == '__main__':  
     modify_readme()
+    print("README.md updated")
 
