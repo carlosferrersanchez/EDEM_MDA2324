@@ -20,3 +20,4 @@ if __name__ == "__main__":
     resultado = sumatorio(num1, num2)
 
     print(f"El resultado de la suma de {num1} y {num2} es: {resultado}")
+
