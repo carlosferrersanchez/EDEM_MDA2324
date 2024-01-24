@@ -45,7 +45,7 @@ The exercise will be carried out **in pairs** in two different GCP projects to w
 
 ## **03** Extra Exercise (Homework Assignment)
 
-As an additional exercise, you are asked to deploy the same architecture, but this time on **Amazon Web Services (AWS)**, specifying the reasoning behind your choice and detailing the steps of its implementation
+As an exercise, you are required to reproduce the **whole architecture**, specifying each step of the solution and providing screenshots for each. Additionally, you should create a Grafana dashboard that explains the variables you want to highlight.
 
 ## **04** Bibliography & Additional Resources (GCP)
 
