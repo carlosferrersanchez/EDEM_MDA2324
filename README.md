@@ -110,7 +110,7 @@ Entregas Fin de Semana
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#9bc99e'>✅</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>✅</td>
 <td bgcolor='#779777'>✅</td>
@@ -125,10 +125,10 @@ Entregas Fin de Semana
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#9bc99e'>✅</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>❌</td>
-<td bgcolor='#779777'>❌</td>
+<td bgcolor='#779777'>✅</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2324/tree/main/Alumnos/FS/Adriana_Campos'>Adriana_campos</a></td>
@@ -140,7 +140,7 @@ Entregas Fin de Semana
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#9bc99e'>✅</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>✅</td>
@@ -169,7 +169,7 @@ Entregas Fin de Semana
 <td bgcolor='#dee2d0'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>✅</td>
@@ -200,7 +200,7 @@ Entregas Fin de Semana
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#9bc99e'>❌</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>✅</td>
 <td bgcolor='#779777'>✅</td>
@@ -275,7 +275,7 @@ Entregas Fin de Semana
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#9bc99e'>❌</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>✅</td>
 <td bgcolor='#779777'>❌</td>
@@ -320,7 +320,7 @@ Entregas Fin de Semana
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#9bc99e'>✅</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>✅</td>
@@ -542,7 +542,7 @@ Entregas Entre Semana
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#9bc99e'>✅</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>✅</td>
@@ -555,9 +555,9 @@ Entregas Entre Semana
 <td bgcolor='#dee2d0'>✅</td>
 <td bgcolor='#dee2d0'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
-<td bgcolor='#a5cbaa'>✅</td>
+<td bgcolor='#a5cbaa'>❌</td>
 <td bgcolor='#9bc99e'>✅</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>✅</td>
@@ -572,7 +572,7 @@ Entregas Entre Semana
 <td bgcolor='#a5cbaa'>❌</td>
 <td bgcolor='#a5cbaa'>❌</td>
 <td bgcolor='#9bc99e'>✅</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>✅</td>
@@ -617,7 +617,7 @@ Entregas Entre Semana
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#a5cbaa'>✅</td>
 <td bgcolor='#9bc99e'>❌</td>
-<td bgcolor='#9bc99e'>❌</td>
+<td bgcolor='#9bc99e'>✅</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>❌</td>
 <td bgcolor='#779777'>✅</td>
