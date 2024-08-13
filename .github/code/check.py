@@ -2,8 +2,24 @@ import os
 
 
 
-deliverables=["DOCKER","PYTHON","LINUX","NOTEBOOKS","AHORCADO","SQL","FLASK","KAFKA","SPARK","DATAFLOW","CLOUD","DEVSECOPS","ESTADISTICA","DEEP_LEARNING","MACHINE_LEARNING"]
-allowed=["DOCKER","PYTHON","LINUX","NOTEBOOKS","AHORCADO","SQL","README.MD","CHUCK","FLASK", "SPARK", "KAFKA", "VALENBISI","CLOUD","DEVSECOPS","DATAFLOW","ESTADISTICA","DEEP_LEARNING","MACHINE_LEARNING"]
+deliverables=["DOCKER","PYTHON","LINUX","NOTEBOOKS","AHORCADO","SQL","FLASK","KAFKA","SPARK","DATAFLOW","CLOUD","DEVSECOPS","ESTADISTICA","DEEP_LEARNING","MACHINE_LEARNING", "DEPLOYMENT"]
+allowed=["DOCKER","PYTHON","LINUX","NOTEBOOKS","AHORCADO","SQL","README.MD","CHUCK","FLASK", "SPARK", "KAFKA", "VALENBISI","CLOUD","DEVSECOPS","DATAFLOW","ESTADISTICA","DEEP_LEARNING","MACHINE_LEARNING", "DEPLOYMENT"]
+
+alias_dict = {
+    "DOCKER":["DOCKER"],
+    "PYTHON":["PYTHON"],
+    "LINUX":["LINUX"],
+    "NOTEBOOKS":["NOTEBOOKS"],
+    "AHORCADO":["AHORCADO"],
+    "SQL":["SQL"],
+    "MACHINELEARNING":["MACHINE_LEARNING"],
+    "MACHINE LEARNING":["MACHINE_LEARNING"],
+    "ML": ["MACHINE_LEARNING"],
+    "DEEP LEARNING":["DEEP_LEARNING"],
+    "DEEPLEARNING":["DEEP_LEARNING"],
+    "DEEPLEARNING_FULLYCONNECTED":["DEEP_LEARNING"],
+    "REDES_NEURONALES":["DEEP_LEARNING"],
+}
 
 
 
@@ -32,7 +48,18 @@ def check_names(folder_path):
             files = os.listdir(file_path)
             for element in files:
                 if element.upper() not in allowed:
-                    print("File not allowed "+file_path+" Elment: "+element)
+                    #print("File not allowed "+file_path+" Elment: "+element)
+                    if element.upper() in alias_dict:
+                         #print("Alias found: "+element+" -> "+str(alias_dict[element.upper()]))
+                         if os.path.exists(file_path+"/"+alias_dict[element.upper()][0]):
+                            print("File already exists "+file_path+"/"+alias_dict[element.upper()][0])
+                         else:   
+                            os.rename(file_path+"/"+element,file_path+"/"+alias_dict[element.upper()][0])
+                         
+
+                    # else:
+                    #     print("File not allowed "+file_path+" Elment: "+element.upper())             
+
 
 def getcolor(element):
     if element in ["DOCKER","PYTHON","LINUX","NOTEBOOKS","AHORCADO"]:
@@ -46,7 +73,7 @@ def getcolor(element):
         return "#779777"
     if element in ["ESTADISTICA"]:
         return "#5f7b6e"
-    if element in ["DEEP_LEARNING","MACHINE_LEARNING"]:
+    if element in ["DEEP_LEARNING","MACHINE_LEARNING", "DEPLOYMENT"]:
         return "#4d5e5b"
     else:
         return "#ffc1b1"
